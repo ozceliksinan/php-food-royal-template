@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Panel</title>
+
+    <script type="text/javascript" src="PanelGenel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="Generic.js"></script>
+    <script type="text/javascript" src="Subpage.js"></script>
+    <script type="text/javascript" src="List.js"></script>
+    <script type="text/javascript" src="nsftoolsDatepicker.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../CSS/elegant.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="Generic.css" />
+    <link rel="stylesheet" type="text/css" href="Subpage.css" />
+    <link rel="stylesheet" type="text/css" href="nsftoolsDatepicker.css" />
+
+</head>
+<body onload="getPanelButtons(); ">
+
+    <section class="secUst">
+
+        <div id="divLogo" class="divLogo"></div>
+
+        <div class="divMenuWrapper">
+            <div id="divPanelButtons" class="divPanelButtons"></div>
+            <div id="divPages" class="divPages"></div>
+        </div>
+
+        <div id="divTagList" class="divTagList"></div>
+
+        <div id="divContent" class="divContent"></div>
+
+        <div id="divSideBar" class="divSideBar">
+
+            <div id="divTagEkle" style="display:none;"></div>
+
+            <div class="divHeaderLong">
+                <span id="spParamsHeader">Params</span>
+            </div>
+            <div class="divParameterContainer">
+                <div id="divParameters" class="divParameters"></div>
+                <input type="button" id="btnAddParameter" style="display:none;" value="Ekle" onclick="addParameterDiv();" />
+                <input type="button" id="btnSaveParameter" style="display:none;" value="Kaydet" onclick="" />
+                <input type="button" id="btnApplyAllParameter" style="display:none;" value="Tümüne Uygula" onclick="baseTagParametreTumuneUygula();" />
+
+            </div>
+            <div class="divHeaderLong">
+                <span id="spPWSHeader">Paste With Style</span>
+            </div>
+            <div id="divPWS" class="divPasteWithStyleContainer">
+                <input type="button" value="PWS" onclick="togglePasteWithStyle();" />&nbsp;<span id="spPasteWithStyle">Kapalı</span>
+            </div>
+
+            <div id="divDeleteBtn" style="display:none;" class="divDeleteBtn">Sil</div>
+            <div id="divSaveBtn" style="display:none;" class="divSaveBtn">Kaydet</div>
+            <div id="divApplyAll" style="display:none;" class="divApplyAll">Tümüne Uygula</div>
+
+        </div>
+
+    </section>
+
+    <section class="popup" style="display:none;" data-poptype="addPage">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">EKLE</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+
+            <label>Sayfa Adı Panel: </label> <input id="txtAddPageName" type="text" /><br>
+            <label>Sayfa Adı DB: </label> <input id="txtAddPageDB" type="text" />
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnAddPage" class="popBtn" onclick="addPage(txtAddPageName.value,txtAddPageDB.value); close_Popup();">EKLE</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick="close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" style="display:none;" data-poptype="addFolder">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">UYARI</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+
+            <label>Klasör Adı: </label> <input id="txtAddFolder" type="text" />
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnAddFolder" class="popBtn" onclick="addFolder(txtAddFolder.value); close_Popup();">EKLE</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick="close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" style="display:none;" data-poptype="baseTumuneUygula">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">UYARI</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+            <p>Değişiklikler tüm grup elemanlarına uygulanacak. Onaylıyor musunuz?</p>
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnBaseTumuneUygula" class="popBtn" onclick="baseGrupTumuneUygula(); close_Popup();">TAMAM</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick=" close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" style="display:none;" data-poptype="genericGrupEkle">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">UYARI</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+
+            <label>Grup Adı: </label> <input id="txtAddGroup" type="text" />
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnAddGroup" class="popBtn" onclick="genericGrupEkle(txtAddGroup.value); close_Popup();">EKLE</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick="close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" style="display:none;" data-poptype="genericEkle">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">UYARI</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+
+            <label>Generic Adı: </label> <input id="txtAddGeneric" type="text" />
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnAddGeneric" class="popBtn" onclick="genericEkle(txtAddGeneric.value); close_Popup();">EKLE</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick="close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" style="display:none;" data-poptype="genericDelete">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">UYARI</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+            <p>Generic alt elemanlarıyla birlikte silinecek. Onaylıyor musunuz?</p>
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnGenericDelete" class="popBtn" onclick="GenericDelete(); close_Popup();">TAMAM</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick=" close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" style="display:none;" data-poptype="baseTagDelete">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">UYARI</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+            <p>Bu tag ve tüm alt tagleri silinecek. Onaylıyor musunuz?</p>
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnTagDelete" class="popBtn" onclick="baseTagDelete(this); close_Popup();">TAMAM</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick=" close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popup" style="display:none;" data-poptype="fileDelete">
+        <div class="divPopContent">
+            <div class="divPopHeader">
+                <div class="divPopRotate">
+                    <span class="spPopHeader">UYARI</span>
+                </div>
+            </div>
+            <span class="icon_close spPopClose" onclick="close_Popup();"></span>
+            <p>Dosya silinecek. Onaylıyor musunuz?</p>
+
+            <div class="divPopBtn">
+                <div class="divPopBtnRotate">
+                    <span id="btnFileDelete" class="popBtn" onclick="fileDelete(this); close_Popup();">TAMAM</span>
+                </div>
+            </div>
+            <div class="divPopBtnCancel">
+                <div class="divPopBtnRotateCancel">
+                    <span class="popBtn" onclick=" close_Popup();">İPTAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

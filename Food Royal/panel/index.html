@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Panel Giriş</title>
+
+    <link rel="stylesheet" type="text/css" href="../panel/index.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/elegant.css" />
+
+    <script type="text/javascript" src="../panel/PanelGenel.js"></script>
+
+    <script type="text/javascript">
+        function login() {
+
+            var postData = "call=login&user=" + txtUser.value + "&pass=" + txtPass.value;
+
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("POST", xhrConnectionPath + "main.php", false);
+            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xmlhttp.send(postData);
+
+            var response = xmlhttp.responseText.replace(/\r\n/g, "");
+
+            if (response.trim() == "ok") {
+
+                window.location = "main.html";
+            }
+            else {
+
+                lblStatus.innerHTML = response;
+            }
+
+        }</script>
+</head>
+<body>
+
+    <section class="secLogin">
+
+        <div class="divHeader">
+            <div class="headerElements">
+                <span class="icon_lock spIcon"></span>
+                <span class="spText">GİRİŞ</span>
+            </div>
+        </div>
+
+        <div class="divLeftIndent"></div>
+        <div class="divRightIndent"></div>
+
+        <div class="divContent">
+
+            <label>Kullanıcı:</label>
+            <input id="txtUser" type="text" /><br />
+            <label>Şifre:</label>
+            <input id="txtPass" type="text" />
+
+
+            <label id="lblStatus" class="status"></label>
+
+        </div>
+        <div class="divGiris">
+            <div class="divRotate">
+                <span class="btnGiris" onclick="login();">OK</span>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+</body>
+</html>

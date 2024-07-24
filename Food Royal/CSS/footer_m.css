@@ -1,0 +1,80 @@
+body {
+    padding-bottom: 16em;
+}
+
+.secFooter {
+    position: absolute;
+    height: 12em;
+    width: 100%;
+    /*margin-top:2em;*/
+
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    /*background: url('../img/headerBack.png') repeat-x;
+    background-size:2500px 245px;
+    background-position: center 89%;*/
+    /*border:1px solid red;*/
+}
+
+.divFooterBack {
+    position: absolute;
+    min-width: 2500px;
+    /*min-height: 245px;*/
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .divFooterBack img {
+        height: 100%;
+        width: 100%;
+    }
+
+.divFooterLogo {
+    position: relative;
+    width: 8em;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+    .divFooterLogo img {
+        width: 100%;
+    }
+
+.divFooterRoyal {
+    position: relative;
+    width: 8em;
+    margin: 0 auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+    .divFooterRoyal img {
+        width: 100%;
+    }
+
+
+.divBeyazBand {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 1em;
+    bottom: -0.5em;
+    background-color: white;
+    z-index: -1;
+}
+
+.divImza {
+    position: absolute;
+    bottom: 0;
+    right: 0.6em;
+    width: 4.5em;
+}
+
+    .divImza img {
+        width: 100%;
+    }

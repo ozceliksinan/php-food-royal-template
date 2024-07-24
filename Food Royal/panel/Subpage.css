@@ -1,0 +1,12 @@
+.divNormal {
+    border: 1px solid darkgray;
+    padding: 0.3em;
+}
+
+.divSelected {
+    border-color: firebrick;
+}
+
+select {
+    min-width: 7em;
+}

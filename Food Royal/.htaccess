@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteRule ^portfolio/(.*)$ detay.html
+
+RewriteRule ^lang-en/(.*)$ $1
+
+RewriteRule ^amarant(.*)$ amarant.php
+RewriteRule ^mas-fasulyesi(.*)$ mas-fasulye.php
+RewriteRule ^beluga-mercimek(.*)$ beluga.php
+RewriteRule ^beyaz-kinoa(.*)$ beyaz-kinoa.php
+RewriteRule ^borulce(.*)$ borulce.php
+RewriteRule ^chia-tohumu(.*)$ chia.php
+RewriteRule ^karabugday(.*)$ kara-bugday.php
+RewriteRule ^karisik-kinoa(.*)$ karisik-kinoa.php
+RewriteRule ^kepekli-pirinc(.*)$ kepekli-pirinc.php
+RewriteRule ^keten-tohumu(.*)$ keten-tohumu.php
+RewriteRule ^kirmizi-fasulye(.*)$ kirmizi-fasulye.php
+RewriteRule ^kirmizi-kinoa(.*)$ kirmizi-kinoa.php
+RewriteRule ^seker-fasulye(.*)$ seker-fasulye.php
+RewriteRule ^siyah-fasulye(.*)$ siyah-fasulye.php
+RewriteRule ^siyah-kinoa(.*)$ siyah-kinoa.php
+RewriteRule ^siyah-pirinc(.*)$ siyah-pirinc.php
+RewriteRule ^jasmine-pirinc(.*)$ jasmine-pirinc.php
+RewriteRule ^basmati-pirinc(.*)$ basmati-pirinc.php

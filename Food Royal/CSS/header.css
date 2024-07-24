@@ -1,0 +1,266 @@
+.secHeader {
+    position: relative;
+    height: 8em;
+    width: 100%;
+    z-index: 2;
+    /* background: url('../img/headerBack.png') repeat-x;
+    background-size:2500px 245px;
+    background-position: center 89%;*/
+    /*border:1px solid red;*/
+}
+
+.divHeaderBack {
+    position: absolute;
+    min-width: 2500px;
+    /*min-height: 245px;*/
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .divHeaderBack img {
+        height: 100%;
+        width: 100%;
+    }
+
+
+.divMenuContainer {
+    position: relative;
+    max-width: 80em;
+    width: 100%;
+    height: 6em;
+    margin: auto;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+.divMenuItem {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 9em;
+    /*border:1px solid red;*/
+}
+
+    .divMenuItem:nth-child(2) {
+        margin-left: 2em;
+        margin-right: 4em;
+        /*border:1px solid red;*/
+    }
+
+    .divMenuItem:nth-child(4) {
+        margin-left: 4em;
+        margin-right: 2em;
+        /*border:1px solid red;*/
+    }
+
+    .divMenuItem span {
+        font-family: 'Montserrat Regular',Helvetica,sans-serif;
+        font-size: 1.1em;
+        color: var(--kahverengi);
+    }
+
+.divHeaderLogo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 8em;
+    height: 100%;
+    /*border:1px solid red;*/
+}
+
+    .divHeaderLogo a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        /*border:1px solid red;*/
+    }
+
+    .divHeaderLogo img {
+        width: 100%;
+        /*border:1px solid red;*/
+    }
+
+.divHeaderRoyal {
+    display: none;
+}
+
+.divMenuIcon {
+    display: none;
+}
+
+.divHeaderSocial {
+    display: none;
+}
+
+.divHeaderLang {
+    display: none;
+}
+
+
+.divHeaderSocial2 {
+    position: absolute;
+    display: block;
+    width: 63em;
+    height: 1.5em;
+    top: 0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: right;
+    /*border:1px solid red;*/
+}
+
+    .divHeaderSocial2 div {
+        position: relative;
+        display: inline-block;
+        width: 1.3em;
+        height: 2em;
+        margin-left: 0.5em;
+        /*border:1px solid red;*/
+    }
+
+        .divHeaderSocial2 div img {
+            width: 100%;
+        }
+
+            .divHeaderSocial2 div img:hover {
+                filter: contrast(150%);
+            }
+
+.divUrunMenu {
+    position: absolute;
+    width: 45em;
+    height: 30em;
+    top: 6em;
+    left: 50%;
+    transform: translateX(-65%);
+    /*background-color: #afa300;*/
+
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.2s;
+    /*border:1px solid red;*/
+}
+
+.divUrunMenuBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+    .divUrunMenuBack img {
+        width: 100%;
+    }
+
+
+.divUrunCol1 {
+    position: absolute;
+    width: 28%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 6%;
+    /*border:1px solid red;*/
+}
+
+    .divUrunCol1 a {
+        position: relative;
+        display: block;
+        margin-top: 0.7em;
+    }
+
+        .divUrunCol1 a:first-of-type {
+            margin-top: 1.5em;
+        }
+
+    .divUrunCol1 span {
+        font-family: 'Montserrat Regular',Helvetica,sans-serif;
+        font-size: 1.1em;
+        color: #062c35;
+    }
+
+        .divUrunCol1 span:hover {
+            color: #ff0d19;
+        }
+
+
+.divUrunCol2 {
+    position: absolute;
+    width: 28%;
+    height: 100%;
+    top: 0;
+    left: 33%;
+    padding-left: 7%;
+    /*border:1px solid red;*/
+}
+
+    .divUrunCol2 a {
+        position: relative;
+        display: block;
+        margin-top: 0.7em;
+    }
+
+        .divUrunCol2 a:first-of-type {
+            margin-top: 1.5em;
+        }
+
+    .divUrunCol2 span {
+        font-family: 'Montserrat Regular',Helvetica,sans-serif;
+        font-size: 1.1em;
+        color: #062c35;
+    }
+
+        .divUrunCol2 span:hover {
+            color: #ff0d19;
+        }
+
+.divUrunCol3 {
+    position: absolute;
+    width: 28%;
+    height: 100%;
+    top: 0;
+    left: 66%;
+    padding-left: 4%;
+    /*border:1px solid red;*/
+}
+
+    .divUrunCol3 a {
+        position: relative;
+        display: block;
+        margin-top: 0.7em;
+    }
+
+        .divUrunCol3 a:first-of-type {
+            margin-top: 1.5em;
+        }
+
+    .divUrunCol3 span {
+        font-family: 'Montserrat Regular',Helvetica,sans-serif;
+        font-size: 1.1em;
+        color: #062c35;
+    }
+
+        .divUrunCol3 span:hover {
+            color: #ff0d19;
+        }
+
+.divHomeIcon {
+    position: absolute;
+    width: 1.7em;
+    height: 1.7em;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+    .divHomeIcon img {
+        width: 100%;
+    }

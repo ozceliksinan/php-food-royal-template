@@ -1,0 +1,315 @@
+.secUst {
+    position: relative;
+    height: 13.8em;
+    margin-top: -3em;
+    background: url('../img/tariflerUst.jpg') no-repeat center bottom;
+    background-size: cover;
+    background-color: #26252c;
+    /*background: url('../img/tariflerUst.png') no-repeat center bottom;
+    background-size:cover;
+    background-color: #26252c;*/
+
+    z-index: 1;
+    /*border:1px solid red;*/
+}
+
+
+.divUstContainer {
+    position: relative;
+    width: 45em;
+    height: 100%;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+.divLang {
+    position: absolute;
+    width: 3em;
+    height: 4em;
+    top: 3.0em;
+    right: -4em;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divLang div {
+        position: relative;
+        width: 100%;
+        height: 2.0em;
+        cursor: pointer;
+    }
+
+        .divLang div span {
+            font-family: 'Montserrat Regular',Helvetica,sans-serif;
+            font-size: 1.2em;
+            color: white;
+        }
+
+.divRoyal {
+    position: relative;
+    width: 7em;
+    height: 2em;
+    margin: 0.5em auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+    .divRoyal img {
+        width: 100%;
+    }
+
+.divSayfaBaslik {
+    position: relative;
+    width: 24em;
+    height: auto;
+    margin: 1.5em auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+    .divSayfaBaslik span {
+        position: relative;
+        display: block;
+        font-family: 'Kalam Bold', Helvetica, sans-serif;
+        font-size: 3.4em;
+        color: white;
+        line-height: 1.1em;
+        text-align: center;
+    }
+
+
+.divTear {
+    position: absolute;
+    min-width: 2500px;
+    /*min-height: 245px;*/
+
+    width: 100%;
+    height: 3em;
+    bottom: -2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .divTear img {
+        height: 100%;
+        width: 100%;
+    }
+
+.secTarifler {
+    position: relative;
+    /*border:1px solid red;*/
+}
+
+.divTarifler {
+    position: relative;
+    /*height: 150em;*/
+}
+
+.divTarif {
+    position: relative;
+    max-width: 60em;
+    width: 60em;
+    min-height: 30em;
+    margin: 2em auto 0 auto;
+    background-color: white;
+    box-shadow: 0 0 0.8em 0.4em rgba(0, 0, 0, 0.2);
+    /*border:1px solid red;*/
+}
+/*
+.divTarif:first-of-type{
+    margin-top: 0;
+}*/
+
+.divTarifBaslik {
+    position: relative;
+    /*margin-top: 1em;*/
+
+    padding: 1em;
+    text-align: left;
+    /*border:1px solid red;*/
+}
+
+    .divTarifBaslik span {
+        position: relative;
+        /*margin-left:1em;*/
+
+        font-family: 'Kalam Bold', Helvetica, sans-serif;
+        font-size: 2em;
+        /*color:white;*/
+    }
+
+.divTarifContent {
+    position: relative;
+}
+
+.divLeft {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    /*border:1px solid red;*/
+}
+
+.divText {
+    position: relative;
+    min-height: 19em;
+    padding: 1em;
+}
+
+    .divText span {
+        position: relative;
+        display: block;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.1em;
+    }
+
+        .divText span:nth-child(3) {
+            margin-top: 1em;
+        }
+
+    .divText p {
+        position: relative;
+        display: block;
+        margin: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 1.1em;
+        line-height: 1.1em;
+    }
+
+.divTarifAlt {
+    position: relative;
+    min-height: 11em;
+    margin-top: 1em;
+    /*border:1px solid red;*/
+}
+
+.divUrunImg {
+    position: absolute;
+    width: 14%;
+    min-height: 8em;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+    .divUrunImg img {
+        width: 100%;
+    }
+
+.divOzellikler {
+    position: relative;
+    margin-left: 18%;
+    /*border:1px solid red;*/
+}
+
+.divOzellikLeft {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    min-height: 6em;
+    padding-top: 1em;
+    /*border:1px solid red;*/
+}
+
+.divOzellikRight {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    min-height: 6em;
+    margin-left: 3%;
+    padding-top: 1em;
+    /*border:1px solid red;*/
+}
+
+.divOzellik {
+    position: relative;
+    /*height: 2em;*/
+    width: 100%;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik img {
+        position: absolute;
+        width: 1em;
+        top: 0.2em;
+        left: 0;
+    }
+
+    .divOzellik span {
+        position: relative;
+        display: block;
+        margin-left: 1.3em;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 1.1em;
+    }
+
+.divKalori {
+    position: relative;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+    .divKalori span:first-of-type {
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 1.4em;
+    }
+
+    .divKalori span:last-of-type {
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.5em;
+    }
+
+.divRight {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 41%;
+    margin-left: 4%;
+    /*border:1px solid red;*/
+}
+
+.divTarifResim {
+    position: relative;
+    width: 100%;
+    /*border:1px solid red;*/
+}
+
+    .divTarifResim img {
+        width: 100%;
+    }
+
+.divTarifVideoContainer {
+    position: relative;
+    width: 100%;
+    margin-top: 1em;
+    /*border:1px solid red;*/
+}
+
+    .divTarifVideoContainer span:first-of-type {
+        position: relative;
+        display: block;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.3em;
+    }
+
+.divTarifVideo {
+    position: relative;
+    width: 100%;
+    height: 14em;
+    /*border:1px solid red;*/
+}
+
+    .divTarifVideo img {
+        width: 100%;
+    }
+
+    .divTarifVideo p {
+        display: none;
+    }
+
+.divTarifVideoContainer span:last-of-type {
+    position: relative;
+    display: block;
+    text-align: right;
+    font-family: 'Dosis Regular',Helvetica,sans-serif;
+    font-size: 1.3em;
+}

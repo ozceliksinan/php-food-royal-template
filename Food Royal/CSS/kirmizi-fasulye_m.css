@@ -1,0 +1,657 @@
+.secSlider {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1;
+    background: url('../img/kirmiziFasulyeBack.png') repeat-x center;
+    background-size: cover;
+    /*background-color: #b64561;*/
+    /*border:1px solid blue;*/
+}
+
+
+
+.divLang {
+    position: absolute;
+    display: none;
+    width: 3em;
+    height: 4em;
+    top: 2.0em;
+    right: 0;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divLang div {
+        position: relative;
+        width: 100%;
+        height: 2.0em;
+        cursor: pointer;
+    }
+
+        .divLang div span {
+            font-family: 'Montserrat Regular',Helvetica,sans-serif;
+            font-size: 1.2em;
+            color: white;
+        }
+
+.divSliderContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 12em;
+    /*border:1px solid red;*/
+}
+
+.divRoyal {
+    position: relative;
+    display: none;
+    width: 7em;
+    height: 2em;
+    margin: auto;
+    top: 2em;
+    /*border:1px solid red;*/
+}
+
+    .divRoyal img {
+        width: 100%;
+    }
+
+
+.divSliderImgs {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 4em;
+    /*border:1px solid red;*/
+}
+
+.divUrunImg {
+    position: relative;
+    width: 32em;
+    /*border:1px solid red;*/
+}
+
+    .divUrunImg img {
+        width: 100%;
+    }
+
+.divUrunSideImg {
+    position: absolute;
+    width: 19em;
+    top: 2em;
+    left: 32em;
+    /*border:1px solid red;*/
+}
+
+    .divUrunSideImg img {
+        width: 100%;
+    }
+
+.divSliderContent {
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin-top: 1em;
+    /*border:1px solid yellow;*/
+}
+
+.divTexts {
+    position: relative;
+    min-height: 19em;
+    /*border:1px solid red;*/
+}
+
+.divText {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+    .divText:nth-of-type(2) {
+        margin-top: 2em;
+    }
+
+    .divText span {
+        position: relative;
+        display: block;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 3em;
+    }
+
+    .divText p {
+        position: relative;
+        display: block;
+        margin: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 2.4em;
+        line-height: 1.1em;
+    }
+
+.divSloganlar {
+    position: relative;
+    width: 98%;
+    margin: 2em auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+.divSloganUst {
+    position: relative;
+    height: 8.0em;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divSloganUst img {
+        margin-left: 2em;
+        height: 100%;
+    }
+
+        .divSloganUst img:first-of-type {
+            margin-left: 0;
+        }
+
+.divSloganAlt {
+    position: relative;
+    height: 9.0em;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divSloganAlt img {
+        margin-left: 3em;
+        height: 100%;
+    }
+
+        .divSloganAlt img:first-of-type {
+            margin-left: 0;
+        }
+
+
+.divOzellikler {
+    position: relative;
+    display: block;
+    grid-template-columns: 0;
+    grid-column-gap: 0;
+    width: 90%;
+    min-height: 6em;
+    margin: 2em auto 0 auto;
+    padding: 0.5em;
+    border: 0.2em solid black;
+    /*border:1px solid red;*/
+}
+
+.divOzellik1 {
+    position: relative;
+    grid-column: 0;
+    width: 80%;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik1 span {
+        position: relative;
+        display: block;
+        margin-top: 0;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 2.8em;
+        text-align: center;
+    }
+
+.divOzellikRow {
+    position: relative;
+    /*border:1px solid red;*/
+}
+
+
+.divOzellik2 {
+    position: relative;
+    grid-column: 0;
+    margin: 1em auto 0 auto;
+    border-right: none;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik2 .divOzellikRow span:first-of-type {
+        width: 40%;
+        margin-left: 0.5em;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 2.6em;
+    }
+
+    .divOzellik2 .divOzellikRow span:last-of-type {
+        width: auto;
+        margin-left: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 2.6em;
+    }
+
+.divOzellik3 {
+    position: relative;
+    grid-column: 0;
+    width: auto;
+    border-right: none;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik3 .divOzellikRow span:first-of-type {
+        width: 40%;
+        margin-left: 0.5em;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 2.6em;
+    }
+
+    .divOzellik3 .divOzellikRow span:last-of-type {
+        width: auto;
+        margin-left: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 2.6em;
+    }
+
+.divOzellik4 {
+    position: relative;
+    grid-column: 0;
+    width: auto;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik4 .divOzellikRow span:first-of-type {
+        width: 40%;
+        margin-left: 0.5em;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 2.6em;
+    }
+
+    .divOzellik4 .divOzellikRow span:last-of-type {
+        width: auto;
+        margin-left: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 2.6em;
+    }
+
+
+.secTarihce {
+    position: relative;
+    width: 100%;
+    margin: 3em auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+.divTarihce {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 1em 0.5em;
+    border: 0.2em solid black;
+}
+
+
+    .divTarihce span {
+        position: relative;
+        display: block;
+        font-family: 'Dosis SemiBold', Helvetica, sans-serif;
+        font-size: 2.8em;
+        text-align: center;
+    }
+
+    .divTarihce p {
+        position: relative;
+        display: block;
+        width: 96%;
+        margin: 0.5em auto 0 auto;
+        font-family: 'Dosis Book',Helvetica,sans-serif;
+        font-size: 2.8em;
+    }
+
+.secTarif {
+    position: relative;
+    width: 100%;
+    margin: 2em auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+.divTarif {
+    position: relative;
+    display: block;
+    grid-template-columns: 0;
+    grid-column-gap: 0;
+    /*border:1px solid red;*/
+}
+
+.divTarifSlogan {
+    position: relative;
+    height: 4em;
+    top: 0;
+}
+
+    .divTarifSlogan span {
+        position: relative;
+        display: block;
+        margin-left: 0.7em;
+        font-family: 'Dosis Medium', Helvetica, sans-serif;
+        font-size: 3em;
+        color: #b42784;
+    }
+
+.divTarifBaslik {
+    position: relative;
+    width: 97%;
+    height: 6.5em;
+    top: 0;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    z-index: 2;
+    /*border:1px solid red;*/
+}
+
+    .divTarifBaslik img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .divTarifBaslik span {
+        position: relative;
+        display: block;
+        top: 0.3em;
+        margin-left: 1em;
+        font-family: 'Dosis Bold', Helvetica, sans-serif;
+        font-size: 3.2em;
+        color: white;
+    }
+
+.divTarifTexts {
+    position: relative;
+    grid-column: 0;
+    margin-top: 1em;
+}
+
+.divTarifText {
+    position: relative;
+    margin-top: 1em;
+}
+
+    .divTarifText:first-of-type {
+        margin-top: 0;
+    }
+
+    .divTarifText span {
+        margin-left: 0.5em;
+        font-family: 'Dosis Medium',Helvetica,sans-serif;
+        font-size: 3em;
+        color: #b42784;
+    }
+
+    .divTarifText p {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin-top: 0;
+        margin-left: 0.5em;
+        margin-bottom: 0;
+        font-family: 'Dosis Book',Helvetica,sans-serif;
+        font-size: 2.8em;
+    }
+
+.divTarifImg {
+    position: relative;
+    grid-column: 0;
+    margin-top: 1em;
+}
+
+    .divTarifImg img {
+        width: 100%;
+    }
+
+.secVideo {
+    position: relative;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .secVideo > p {
+        position: relative;
+        display: block;
+        margin: 2em auto 1em auto;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 3em;
+        color: #a45a96;
+    }
+
+.divVideo {
+    position: relative;
+    display: block;
+    width: 50em;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+    .divVideo iframe {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 29.4em;
+    }
+
+    .divVideo img {
+        width: 100%;
+    }
+
+    .divVideo p {
+        position: absolute;
+        width: 100%;
+        top: 5.7em;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-family: 'Kalam Regular',Helvetica,sans-serif;
+        font-size: 3em;
+        color: #a45a96;
+    }
+
+.secUrunler {
+    position: relative;
+    margin-top: 5em;
+    /*border:1px solid red;*/
+}
+
+.divRaf {
+    position: absolute;
+    width: 100%;
+    top: 23.4em;
+    left: 0;
+}
+
+    .divRaf img {
+        width: 100%;
+        height: 6.5em;
+    }
+
+.divUrunContainer {
+    position: relative;
+    height: 37em;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+
+
+.divUrunArrow {
+    width: 6em;
+    height: 6em;
+    top: 12em;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    /*border:1px solid red;*/
+}
+
+    .divUrunArrow img {
+        width: 100%;
+    }
+
+    .divUrunArrow:hover {
+        filter: saturate(130%);
+    }
+
+    .divUrunArrow:active {
+        top: 12.1em;
+        transform: scale(0.96);
+    }
+
+.prev {
+    position: absolute;
+    left: 5%;
+}
+
+.next {
+    position: absolute;
+    right: 5%;
+}
+
+.divUrunWrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 36em;
+    width: 36em;
+    height: auto;
+    top: 3em;
+    margin: auto;
+    z-index: 1;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+
+
+
+.divUrunler {
+    position: relative;
+    left: 0;
+    height: 32em;
+    white-space: nowrap;
+    /*border:1px solid red;*/
+}
+
+.divUrunAna {
+    position: absolute;
+    /*position: relative;
+    display: inline-block;*/
+
+    width: 18em;
+    margin-top: 0;
+    transition: all 0.3s;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divUrunAna img {
+        position: relative;
+        display: block;
+        width: 12em;
+        margin: auto;
+    }
+
+    .divUrunAna span:first-of-type {
+        position: relative;
+        display: block;
+        margin-top: 1.5em;
+        font-family: 'Montserrat Medium', Helvetica, sans-serif;
+        font-size: 2em;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .divUrunAna span:last-of-type {
+        position: relative;
+        display: block;
+        margin-top: 0.5em;
+        font-family: 'Montserrat Regular', Helvetica, sans-serif;
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+
+
+.divDigerLink {
+    position: relative;
+    width: 100%;
+    margin: 2em auto 0 auto;
+    box-shadow: 0 0 0.8em 0.4em rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+
+    .divDigerLink img {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 200%;
+        left: -100%;
+    }
+
+    .divDigerLink p {
+        position: absolute;
+        display: block;
+        width: 50%;
+        top: 15%;
+        left: 10%;
+        transform: none;
+        margin: 0;
+        text-align: center;
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 3.4em;
+        color: white;
+        line-height: 1.1em;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.8), 0 0 1em #ab5e3d, 0 0 0.5em #ab5e3d;
+        /*border:1px solid red;*/
+    }
+
+.divDigerBtn {
+    position: absolute;
+    width: 12em;
+    height: 5.4em;
+    top: 40%;
+    left: 80%;
+    /*transform: translateX(-50%);*/
+
+    text-align: left;
+    /*border:1px solid red;*/
+}
+
+    .divDigerBtn img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+
+    .divDigerBtn:hover img {
+        filter: saturate(150%);
+    }
+
+    .divDigerBtn a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .divDigerBtn span {
+        position: relative;
+        top: 18%;
+        left: 20%;
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 3.2em;
+        color: white;
+    }

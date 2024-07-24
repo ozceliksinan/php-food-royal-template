@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Opensans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Opensans Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/OpenSans-Semibold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Kalam Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Kalam-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Kalam Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Kalam-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Kalam Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Kalam-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Dosis Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Dosis-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Dosis Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Dosis-Book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Dosis Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Dosis-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Dosis Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Dosis-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Dosis Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Dosis-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Dosis SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Dosis-SemiBold.woff2') format('woff2');
+}
+
+
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-smooth: always;*/
+    /*font-size: 1.2vw;*/
+    font-size: 4pt;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: url('../img/hasirBack.jpg') repeat center;
+    background-size: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 20rem) {
+    body {
+        font-size: 5pt;
+    }
+}
+
+@media all and (min-width: 38rem) {
+    body {
+        font-size: 7pt;
+    }
+}
+
+@media all and (min-width: 44rem) {
+    body {
+        font-size: 8pt;
+    }
+}
+
+@media all and (min-width: 62rem) {
+    body {
+        font-size: 10pt;
+    }
+}
+
+@media all and (min-width: 70rem) {
+    body {
+        font-size: 11pt;
+    }
+}
+
+
+:root {
+    --kahverengi: rgba(68,38,9,1);
+    --kirmizi: #d10a11;
+    --yesil: rgb(7,84,2);
+    --mor: rgb(115, 11, 63);
+}
+
+
+.secOuter {
+    position: relative;
+    /*height: 440em;*/
+
+
+    max-width: 80rem;
+    margin: 0 auto;
+    /*padding-bottom: 10em;*/
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /*background-color: #a1b4e8;*/
+}

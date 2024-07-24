@@ -1,0 +1,710 @@
+.secSlider {
+    position: relative;
+    height: 40em;
+    width: 100%;
+    margin-top: -3em;
+    z-index: 1;
+    background: url('../img/sliderBack.jpg') no-repeat center 80%;
+    background-size: 2500px 999px;
+    background-color: #b64561;
+    /*border:1px solid red;*/
+}
+
+.divSliderBack {
+    position: absolute;
+    /*min-width: 2500px;*/
+    /*min-height: 600px;*/
+
+    min-width: 80em;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+    .divSliderBack img {
+        width: 100%;
+        height: 100%;
+    }
+
+.divSocial {
+    position: absolute;
+    width: 3em;
+    height: 13em;
+    top: 2em;
+    right: -7em;
+    z-index: 2;
+    /*border:1px solid red;*/
+}
+
+    .divSocial div {
+        position: relative;
+        width: 100%;
+        height: 3em;
+        margin-top: 1em;
+        /*border:1px solid red;*/
+    }
+
+        .divSocial div img {
+            width: 100%;
+        }
+
+        .divSocial div:hover img {
+            filter: contrast(150%);
+        }
+
+.divLang {
+    position: absolute;
+    width: 3em;
+    height: 4em;
+    top: 3.0em;
+    right: -10.5em;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divLang div {
+        position: relative;
+        width: 100%;
+        height: 2.0em;
+        cursor: pointer;
+    }
+
+        .divLang div span {
+            font-family: 'Montserrat Regular',Helvetica,sans-serif;
+            font-size: 1.2em;
+            color: white;
+        }
+
+.divSliderContainer {
+    position: relative;
+    width: 45em;
+    height: 100%;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+.divRoyal {
+    position: relative;
+    width: 7em;
+    height: 2em;
+    margin: 2em auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+    .divRoyal img {
+        width: 100%;
+    }
+
+.divSliderImg {
+    position: absolute;
+    width: 130%;
+    left: -17%;
+    bottom: -0.1em;
+}
+
+    .divSliderImg img {
+        width: 100%;
+    }
+
+.divSlogan1 {
+    position: absolute;
+    width: 100%;
+    top: 8em;
+    left: 0;
+    /*border:1px solid red;*/
+}
+
+    .divSlogan1 span {
+        position: relative;
+        display: block;
+        font-family: 'Kalam Bold', Helvetica, sans-serif;
+        font-size: 3.6em;
+        color: white;
+        line-height: 1.1em;
+        text-align: center;
+    }
+
+.divSlogan2 {
+    position: absolute;
+    top: 26em;
+    left: 13em;
+    width: 14em;
+    /*border:1px solid red;*/
+}
+
+    .divSlogan2 span {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: white;
+        line-height: 1.2em;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1em rgba(21, 45, 0, 1), 0 0 0.5em rgb(16, 45, 0);
+    }
+
+
+
+
+.secUrunler {
+    position: relative;
+    /*height: 34em;*/
+
+    z-index: 2;
+    /*border:1px solid red;*/
+}
+
+
+
+.divSliderTear {
+    position: absolute;
+    min-width: 2500px;
+    /*min-height: 245px;*/
+
+    width: 100%;
+    height: 4em;
+    top: -0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .divSliderTear img {
+        height: 100%;
+        width: 100%;
+    }
+
+.divUrunSlogan {
+    position: relative;
+    display: block;
+    top: 2.5em;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divUrunSlogan p {
+        position: relative;
+        width: 33em;
+        margin: auto;
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.7em;
+        color: var(--yesil);
+    }
+
+
+.divUrunContainer {
+    position: relative;
+    height: 24em;
+    margin-top: 3em;
+    text-align: center;
+    white-space: nowrap;
+    /*border:1px solid red;*/
+}
+
+.divUrunlerBack {
+    position: absolute;
+    min-width: 2500px;
+    /*min-height: 245px;*/
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .divUrunlerBack img {
+        height: 100%;
+        width: 100%;
+    }
+
+.divUrunArrow {
+    width: 4em;
+    height: 4em;
+    top: 8em;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 2;
+    /*border:1px solid red;*/
+}
+
+    .divUrunArrow img {
+        width: 100%;
+    }
+
+    .divUrunArrow:hover {
+        filter: saturate(130%);
+    }
+
+    .divUrunArrow:active {
+        top: 8.1em;
+        transform: scale(0.96);
+    }
+
+.prev {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    /*left:19%;*/
+}
+
+.next {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+    /*right:19%;*/
+}
+
+
+.divUrunWrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 60em;
+    width: 60em;
+    height: 19em;
+    top: 1.5em;
+    margin-left: 2%;
+    z-index: 1;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+
+@media all and (max-width: 80em) {
+
+
+    .divUrunWrapper {
+        width: 70em;
+    }
+}
+
+@media all and (max-width: 70em) {
+
+
+    .divUrunWrapper {
+        width: 60em;
+    }
+}
+
+@media all and (max-width: 60em) {
+
+
+    .divUrunWrapper {
+        width: 50em;
+    }
+}
+
+
+
+.divUrunler {
+    position: relative;
+    height: 17em;
+    margin-top: 2em;
+    left: 0;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.divUrunAna {
+    position: absolute;
+    /*position: relative;
+    display: inline-block;*/
+
+    width: 10em;
+    transition: all 0.3s;
+    text-align: center;
+    cursor: pointer;
+    /*border:1px solid red;*/
+}
+
+    .divUrunAna:hover img {
+        transform: scale(1.2);
+    }
+
+    .divUrunAna img {
+        position: relative;
+        display: block;
+        width: 6.5em;
+        margin: auto;
+        /*image-rendering: crisp-edges;*/
+
+        transition: all 0.3s;
+    }
+
+    .divUrunAna span:first-of-type {
+        position: relative;
+        display: block;
+        margin-top: 0.3em;
+        font-family: 'Montserrat Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: var(--yesil);
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .divUrunAna span:last-of-type {
+        position: relative;
+        display: block;
+        margin-top: 0.5em;
+        font-family: 'Montserrat Light', Helvetica, sans-serif;
+        font-size: 1.1em;
+        color: var(--yesil);
+        cursor: pointer;
+    }
+
+.secTarif {
+    position: relative;
+    /*display: grid;*/
+
+    margin-top: 2em;
+    /*height: 70em;*/
+
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+.divTarifRow {
+    position: relative;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+    height: auto;
+    max-width: 80em;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+.divTarifSlider {
+    position: relative;
+    grid-column: 1;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 0.8em 0.4em rgba(0, 0, 0, 0.2);
+    /*border:1px solid red;*/
+}
+
+
+.divVideoTarif {
+    position: relative;
+    grid-column: 2;
+    height: 100%;
+    /*border:1px solid red;*/
+}
+
+.divTarifVideoBack {
+    position: relative;
+    box-shadow: 0 0 0.8em 0.4em rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+    .divTarifVideoBack img {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+.divVideoText {
+    position: absolute;
+    width: 55%;
+    height: 55%;
+    left: 45%;
+    top: 5%;
+    /*border:1px solid red;*/
+}
+
+    .divVideoText span {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2.4em;
+        color: var(--kahverengi);
+        text-shadow: 0.1em 0 1em rgba(255, 255, 255, 0.8), 0 0.1em 1em rgba(255, 255, 255, 0.8), 0.1em 0 0.8em rgba(255, 255, 255, 0.9), 0 0.1em 0.8em rgba(255, 255, 255, 0.9), 0.1em 0 0.5em white, 0 0.1em 0.5em white;
+    }
+
+
+.divTarifSlide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    transition: all 0.3s;
+}
+
+    .divTarifSlide:first-of-type {
+        position: relative;
+    }
+
+
+.divTarifSliderBack {
+    position: relative;
+    width: 100%;
+}
+
+    .divTarifSliderBack img {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+
+.divTarif1Text {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 37%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*border:1px solid red;*/
+}
+
+    .divTarif1Text span {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2.2em;
+        color: white;
+        text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);
+    }
+
+    .divTarif1Text p {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: white;
+        text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);
+    }
+
+.divTarif2Text {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 37%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*border:1px solid red;*/
+}
+
+    .divTarif2Text span {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2.2em;
+        color: white;
+        text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);
+    }
+
+    .divTarif2Text p {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: white;
+        text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);
+    }
+
+.divTarif3Text {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 37%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*border:1px solid red;*/
+}
+
+    .divTarif3Text span {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2.2em;
+        color: white;
+        text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);
+    }
+
+    .divTarif3Text p {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: white;
+        text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);
+    }
+
+.divTarif4Text {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 57%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*border:1px solid red;*/
+}
+
+    .divTarif4Text span {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2.2em;
+        color: black;
+        /*text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);*/
+    }
+
+    .divTarif4Text p {
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: black;
+        /*text-shadow: 0 0 0.8em rgba(0, 0, 0,0.3), 0 0 0.4em rgba(0, 0, 0,0.6);*/
+    }
+
+.divSliderDots {
+    position: absolute;
+    width: 100%;
+    height: 1.5em;
+    bottom: 1em;
+    left: 0;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 2;
+    /*background-color: orangered;*/
+    /*border:1px solid red;*/
+}
+
+.divSliderDot {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 1em;
+    background-color: var(--yesil);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 50%;
+}
+
+    .divSliderDot:first-of-type {
+        margin-left: 0;
+    }
+
+.dotSelected {
+    background-color: rgb(8, 172, 2);
+}
+
+
+.divTarifLink {
+    position: relative;
+    max-width: 80em;
+    margin: 2em auto 0 auto;
+    box-shadow: 0 0 0.8em 0.4em rgba(0, 0, 0, 0.2);
+    /*border:1px solid red;*/
+}
+
+    .divTarifLink img {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .divTarifLink span:nth-child(2) {
+        position: absolute;
+        width: 16%;
+        top: 29%;
+        left: 32%;
+        transform: rotate(-5.9deg);
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: rgba(0, 0, 0, 0.9);
+        line-height: 1.4em;
+        /*border:1px solid red;*/
+    }
+
+    .divTarifLink a {
+        position: absolute;
+        width: 13%;
+        top: 62.8%;
+        left: 34.5%;
+        transform: rotate(-5.9deg);
+        /*border:1px solid red;*/
+    }
+
+        .divTarifLink a span {
+            font-family: 'Kalam Light', Helvetica, sans-serif;
+            font-size: 1.2em;
+            line-height: 1.2em;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .divTarifLink a:hover span {
+            color: rgb(255, 240, 0);
+        }
+
+    .divTarifLink span:nth-child(4) {
+        position: absolute;
+        width: 8%;
+        top: 23.5%;
+        left: 53.5%;
+        transform: rotate(-5.9deg);
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: rgba(0, 0, 0, 0.9);
+        line-height: 1.4em;
+        /*border:1px solid red;*/
+    }
+
+.divDigerLink {
+    position: relative;
+    max-width: 80em;
+    margin: 2em auto 0 auto;
+    box-shadow: 0 0 0.8em 0.4em rgba(0, 0, 0, 0.2);
+    /*border:1px solid red;*/
+}
+
+    .divDigerLink img {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .divDigerLink p {
+        position: absolute;
+        display: block;
+        width: 36%;
+        top: 15%;
+        left: 50%;
+        margin: 0;
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2.0em;
+        color: white;
+        /*border:1px solid red;*/
+    }
+
+.divDigerBtn {
+    position: absolute;
+    width: 7em;
+    height: 3.2em;
+    top: 22%;
+    left: 88%;
+    text-align: left;
+    /*border:1px solid red;*/
+}
+
+    .divDigerBtn img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+
+    .divDigerBtn:hover img {
+        filter: saturate(150%);
+    }
+
+    .divDigerBtn a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .divDigerBtn span {
+        position: relative;
+        top: 18%;
+        left: 20%;
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2em;
+        color: white;
+    }

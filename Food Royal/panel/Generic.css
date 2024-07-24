@@ -1,0 +1,395 @@
+.divHeader {
+    position: relative;
+    display: inline-block;
+    width: 14em;
+    height: 2em;
+    color: white;
+    font-family: Consolas, 'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: #11e69e;
+}
+
+    .divHeader:after {
+        position: absolute;
+        content: '';
+        height: 3em;
+        width: 4em;
+        top: -1.2em;
+        left: 12em;
+        background-color: white;
+        transform: rotateZ(-30deg);
+    }
+
+    .divHeader span {
+        position: relative;
+        left: -1em;
+        top: 0.3em;
+    }
+
+
+
+.divHeaderAlt {
+    position: relative;
+    /*display:inline-block;*/
+
+    width: 25%;
+    min-width: 10em;
+    height: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.9em;
+    background-color: #a0a0a0;
+    overflow: hidden;
+}
+
+    .divHeaderAlt:after {
+        position: absolute;
+        content: '';
+        height: 9em;
+        width: 9em;
+        top: -5em;
+        left: 70%;
+        background-color: #c0bcc0;
+        /*background-color: transparent;*/
+
+
+        transform: rotateZ(-30deg);
+    }
+
+    .divHeaderAlt span {
+        position: relative;
+        font-family: Helvetica, sans-serif;
+        left: 0.2em;
+        top: 0.2em;
+    }
+
+
+.divHeaderLong {
+    position: relative;
+    /*display:inline-block;*/
+
+    width: 55%;
+    min-width: 10em;
+    height: 1.5em;
+    left: 0.25em;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.9em;
+    background-color: #a0a0a0;
+    overflow: hidden;
+}
+
+    .divHeaderLong:after {
+        position: absolute;
+        content: '';
+        height: 9em;
+        width: 9em;
+        top: -5em;
+        left: 95%;
+        background-color: #c0bcc0;
+        /*background-color: transparent;*/
+
+
+        transform: rotateZ(-30deg);
+    }
+
+    .divHeaderLong span {
+        position: relative;
+        font-family: Helvetica, sans-serif;
+        font-size: 0.8em;
+        font-weight: bold;
+        left: 0.2em;
+        top: 0.2em;
+    }
+
+.divGroups {
+    position: relative;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0.5em 2em;
+    border: solid 1px gray;
+}
+
+.btnGrupEkle {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 0.3em 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    background-color: #00dc7c;
+}
+
+.divGroup {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5em;
+    padding: 0.2em 0.7em;
+    border: 1px solid orangered;
+    border-radius: 0.3em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.divGroupSelected {
+    background-color: orangered;
+}
+
+.divTagEkleContent {
+    position: relative;
+    min-height: 5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0.5em 2em;
+    background-color: #c8c8c8;
+    border: solid 1px gray;
+}
+
+.btnTagEkle {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 0.3em 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    background-color: #00dc7c;
+}
+
+.divGenericTag {
+    position: relative;
+    display: inline-block;
+    margin-right: 0.3em;
+    margin-bottom: 0.5em;
+    padding: 0.3em 0.5em;
+    border: 1px solid orangered;
+    border-radius: 0.3em;
+    color: white;
+    background-color: orange;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.divGenericTagSelected {
+    background-color: orangered;
+}
+
+.divParametreler {
+    position: relative;
+    min-height: 5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0.5em 2em;
+    border: solid 1px gray;
+}
+
+
+.btnParametreEkle {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    padding: 0.3em 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    background-color: #00dc7c;
+}
+
+.btnParametreKaydet {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 0.3em 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    background-color: #00dc7c;
+}
+
+.divBaseParameter {
+    position: relative;
+    margin-bottom: 0.5em;
+    border: solid 1px;
+}
+
+    .divBaseParameter select {
+        width: 5em;
+    }
+
+    .divBaseParameter span {
+        width: 1em;
+    }
+
+    .divBaseParameter input[type=text] {
+        width: 5em;
+    }
+
+
+
+
+.divGrupIslem {
+    position: relative;
+    min-height: 5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0.5em 2em;
+    border: solid 1px gray;
+}
+
+
+.btnGrupKaydet {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    padding: 0.3em 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    background-color: #00dc7c;
+}
+
+.btnGrupUygula {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    padding: 0.3em 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    background-color: #00dc7c;
+}
+
+
+
+.divGenericTemplate {
+    position: relative;
+    min-height: 4em;
+    padding: 0.5em;
+    border: 2px solid gray;
+}
+
+.baseTagBig {
+    position: relative;
+    min-height: 4em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid gray;
+}
+
+    .baseTagBig img {
+        max-width: 10em;
+    }
+
+.baseTagSmall {
+    position: relative;
+    width: 60%;
+    min-height: 1em;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+    border: 1px solid gray;
+}
+
+    .baseTagSmall img {
+        max-width: 10em;
+    }
+
+    .baseTagSmall input[type=text] {
+        width: 99%;
+    }
+
+.baseTagSelected {
+    border: solid 3px #2fa3ff;
+    !important;
+}
+
+.tagControls {
+    position: absolute;
+    display: inline-block;
+    top: -1.4em;
+    right: 0;
+}
+
+    .tagControls span {
+        cursor: pointer;
+        font-size: 1.2em;
+    }
+
+
+
+
+.baseHeader {
+    position: relative;
+    /*display:inline-block;*/
+
+    width: 20%;
+    height: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: #a0a0a0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+    .baseHeader:after {
+        position: absolute;
+        content: '';
+        height: 3em;
+        width: 3em;
+        top: -1em;
+        left: 94%;
+        background-color: #c0bcc0;
+        transform: rotateZ(-30deg);
+    }
+
+    .baseHeader span {
+        position: relative;
+        font-family: Helvetica, sans-serif;
+        left: -1em;
+        top: 0.2em;
+    }
+
+.baseHeaderSelected {
+    background-color: #2fa3ff;
+}
+
+.baseTargetHeader {
+    background-color: #ff6100;
+}
+
+
+.divStdGiris {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+    .divStdGiris span {
+        position: relative;
+        display: inline-block;
+        /*width:5em;*/
+
+        margin-top: 0.5em;
+        font-family: 'Opensans Semibold','Times New Roman',serif;
+        font-size: 0.95em;
+        /*text-shadow:0 1px 1px #aeaeae;*/
+    }
+
+    .divStdGiris input[type=text] {
+        position: relative;
+        min-height: 1em;
+        width: 14em;
+        margin-bottom: 0.5em;
+        margin-left: 0.5em;
+        padding: 0.1em 0.2em;
+        border-radius: 0.2em;
+        box-shadow: 1px 1px 1px gray;
+    }

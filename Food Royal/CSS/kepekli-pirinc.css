@@ -1,0 +1,685 @@
+.secSlider {
+    position: relative;
+    height: 40em;
+    width: 100%;
+    margin-top: -3em;
+    z-index: 1;
+    background: url('../img/kepekliPirincBack.png') repeat-x center;
+    background-size: cover;
+    /*background-color: #b64561;*/
+    /*border:1px solid blue;*/
+}
+
+
+
+.divLang {
+    position: absolute;
+    width: 3em;
+    height: 4em;
+    top: 3.0em;
+    right: 0;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .divLang div {
+        position: relative;
+        width: 100%;
+        height: 2.0em;
+        cursor: pointer;
+    }
+
+        .divLang div span {
+            font-family: 'Montserrat Regular',Helvetica,sans-serif;
+            font-size: 1.2em;
+            color: white;
+        }
+
+.divSliderContainer {
+    position: relative;
+    width: 65em;
+    height: 100%;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+.divRoyal {
+    position: relative;
+    width: 7em;
+    height: 2em;
+    margin: auto;
+    top: 2em;
+    /*border:1px solid red;*/
+}
+
+    .divRoyal img {
+        width: 100%;
+    }
+
+
+.divSliderImgs {
+    position: absolute;
+    width: 28em;
+    top: 6em;
+    left: 0;
+    /*border:1px solid red;*/
+}
+
+.divUrunImg {
+    position: relative;
+    width: 18em;
+    /*border:1px solid red;*/
+}
+
+    .divUrunImg img {
+        width: 100%;
+    }
+
+.divUrunSideImg {
+    position: absolute;
+    width: 12em;
+    top: 0;
+    right: 0;
+    /*border:1px solid red;*/
+}
+
+    .divUrunSideImg img {
+        width: 100%;
+    }
+
+.divSliderContent {
+    position: absolute;
+    width: 33em;
+    top: 7em;
+    right: 0;
+    /*border:1px solid yellow;*/
+}
+
+.divTexts {
+    position: relative;
+    min-height: 19em;
+    /*border:1px solid red;*/
+}
+
+.divText {
+    position: relative;
+    /*border:1px solid red;*/
+}
+
+    .divText:nth-of-type(2) {
+        margin-top: 1em;
+    }
+
+    .divText span {
+        position: relative;
+        display: block;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.5em;
+    }
+
+    .divText p {
+        position: relative;
+        display: block;
+        margin: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 1.3em;
+        line-height: 1.1em;
+    }
+
+.divSloganlar {
+    position: relative;
+    width: 100%;
+    margin-top: 0.5em;
+    /*border:1px solid red;*/
+}
+
+.divSloganUst {
+    position: relative;
+    height: 5em;
+    /*border:1px solid red;*/
+}
+
+    .divSloganUst img {
+        margin-left: 2em;
+        height: 100%;
+    }
+
+        .divSloganUst img:first-of-type {
+            margin-left: 0;
+        }
+
+.divSloganAlt {
+    position: relative;
+    height: 4.5em;
+    margin-top: 1em;
+    white-space: nowrap;
+    /*border:1px solid red;*/
+}
+
+    .divSloganAlt img {
+        margin-left: 3em;
+        height: 100%;
+    }
+
+        .divSloganAlt img:first-of-type {
+            margin-left: 0;
+        }
+
+
+.divOzellikler {
+    position: relative;
+    display: grid;
+    grid-template-columns: 28% 25% 18% 25%;
+    grid-column-gap: 2%;
+    width: 65em;
+    min-height: 6em;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+.divOzellik1 {
+    position: relative;
+    grid-column: 1;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik1 span {
+        position: relative;
+        display: block;
+        margin-top: 1em;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+.divOzellikRow {
+    position: relative;
+    /*border:1px solid red;*/
+}
+
+
+.divOzellik2 {
+    position: relative;
+    grid-column: 2;
+    border-right: 0.2em solid black;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik2 .divOzellikRow span:first-of-type {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 48%;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.3em;
+        /*border:1px solid blue;*/
+    }
+
+    .divOzellik2 .divOzellikRow span:last-of-type {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        margin-left: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 1.3em;
+        /*border:1px solid blue;*/
+    }
+
+.divOzellik3 {
+    position: relative;
+    grid-column: 3;
+    border-right: 0.2em solid black;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik3 .divOzellikRow span:first-of-type {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 60%;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.3em;
+        /*border:1px solid blue;*/
+    }
+
+    .divOzellik3 .divOzellikRow span:last-of-type {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        margin-left: 5%;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 1.3em;
+        /*border:1px solid blue;*/
+    }
+
+.divOzellik4 {
+    position: relative;
+    grid-column: 4;
+    /*border:1px solid red;*/
+}
+
+    .divOzellik4 .divOzellikRow span:first-of-type {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 48%;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.3em;
+        /*border:1px solid blue;*/
+    }
+
+    .divOzellik4 .divOzellikRow span:last-of-type {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        margin-left: 0;
+        font-family: 'Dosis Regular',Helvetica,sans-serif;
+        font-size: 1.3em;
+        /*border:1px solid blue;*/
+    }
+
+.secTarihce {
+    position: relative;
+    max-width: 65em;
+    margin: 2em auto 0 auto;
+    /*border:1px solid red;*/
+}
+
+.divTarihce {
+    padding: 1em 0;
+    border: 0.2em solid black;
+}
+
+    .divTarihce span {
+        position: relative;
+        display: block;
+        font-family: 'Dosis SemiBold', Helvetica, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .divTarihce p {
+        position: relative;
+        display: block;
+        width: 96%;
+        margin: 1em auto 0 auto;
+        font-family: 'Dosis Book',Helvetica,sans-serif;
+        font-size: 1.3em;
+    }
+
+.secTarif {
+    position: relative;
+    max-width: 65em;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+.divTarif {
+    position: relative;
+    display: grid;
+    grid-template-columns: 53% 45%;
+    grid-column-gap: 2%;
+    /*border:1px solid red;*/
+}
+
+.divTarifSlogan {
+    position: relative;
+    height: 2em;
+    top: 2em;
+}
+
+    .divTarifSlogan span {
+        position: relative;
+        display: block;
+        margin-left: 2.3em;
+        font-family: 'Dosis Medium', Helvetica, sans-serif;
+        font-size: 1.8em;
+        color: #984d2d;
+    }
+
+.divTarifBaslik {
+    position: relative;
+    width: 70%;
+    height: 3.5em;
+    top: 3.0em;
+    margin-left: 0.5em;
+    z-index: 2;
+    /*border:1px solid red;*/
+}
+
+    .divTarifBaslik img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .divTarifBaslik span {
+        position: relative;
+        display: block;
+        top: 0.3em;
+        margin-left: 2em;
+        font-family: 'Dosis Bold', Helvetica, sans-serif;
+        font-size: 1.8em;
+        color: white;
+    }
+
+.divTarifTexts {
+    position: relative;
+    grid-column: 1;
+    margin-top: 4em;
+}
+
+.divTarifText {
+    position: relative;
+    margin-top: 1em;
+}
+
+    .divTarifText:first-of-type {
+        margin-top: 0;
+    }
+
+    .divTarifText span {
+        margin-left: 0.5em;
+        font-family: 'Dosis Medium',Helvetica,sans-serif;
+        font-size: 1.4em;
+        color: #984d2d;
+    }
+
+    .divTarifText p {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin-top: 0;
+        margin-left: 0.5em;
+        margin-bottom: 0;
+        font-family: 'Dosis Book',Helvetica,sans-serif;
+        font-size: 1.3em;
+    }
+
+.divTarifImg {
+    position: relative;
+    grid-column: 2;
+}
+
+    .divTarifImg img {
+        width: 100%;
+    }
+
+.secVideo {
+    position: relative;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+    .secVideo > p {
+        position: relative;
+        display: block;
+        margin: 2em auto 1em auto;
+        font-family: 'Dosis SemiBold',Helvetica,sans-serif;
+        font-size: 1.6em;
+        color: #984d2d;
+    }
+
+.divVideo {
+    position: relative;
+    display: block;
+    width: 60em;
+    margin: auto;
+    /*border:1px solid red;*/
+}
+
+    .divVideo iframe {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 35em;
+    }
+
+    .divVideo img {
+        width: 35em;
+    }
+
+    .divVideo p {
+        position: absolute;
+        width: 80%;
+        top: 9em;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-family: 'Kalam Regular',Helvetica,sans-serif;
+        font-size: 1.6em;
+        line-height: 1.2em;
+        color: #984d2d;
+    }
+
+.secUrunler {
+    position: relative;
+    margin-top: 2em;
+    /*border:1px solid red;*/
+}
+
+.divRaf {
+    position: absolute;
+    width: 100%;
+    top: 14.9em;
+    left: 0;
+}
+
+    .divRaf img {
+        width: 100%;
+        height: 4.5em;
+    }
+
+.divUrunContainer {
+    position: relative;
+    height: 22em;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+
+
+.divUrunArrow {
+    width: 4em;
+    height: 4em;
+    top: 9em;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 2;
+    /*border:1px solid red;*/
+}
+
+    .divUrunArrow img {
+        width: 100%;
+    }
+
+    .divUrunArrow:hover {
+        filter: saturate(130%);
+    }
+
+    .divUrunArrow:active {
+        top: 9.1em;
+        transform: scale(0.96);
+    }
+
+.prev {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    /*left:19%;*/
+}
+
+.next {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    /*right:19%;*/
+}
+
+.divUrunWrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 60em;
+    width: 60em;
+    height: 19em;
+    top: 3.5em;
+    margin: auto;
+    z-index: 1;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+
+@media all and (max-width: 80em) {
+
+
+    .divUrunWrapper {
+        width: 60em;
+    }
+}
+
+@media all and (max-width: 70em) {
+
+
+    .divUrunWrapper {
+        width: 50em;
+    }
+}
+
+@media all and (max-width: 60em) {
+
+
+    .divUrunWrapper {
+        width: 40em;
+    }
+}
+
+
+.divUrunler {
+    position: relative;
+    left: 0;
+    height: 17em;
+    white-space: nowrap;
+}
+
+.divUrunAna {
+    position: absolute;
+    /*position: relative;
+    display: inline-block;*/
+
+    width: 10em;
+    margin-top: 2em;
+    transition: all 0.3s;
+    text-align: center;
+    cursor: pointer;
+    /*border:1px solid red;*/
+}
+
+    .divUrunAna:hover img {
+        transform: scale(1.2);
+    }
+
+    .divUrunAna img {
+        position: relative;
+        display: block;
+        width: 5.6em;
+        margin: auto;
+        transition: all 0.3s;
+    }
+
+    .divUrunAna span:first-of-type {
+        position: relative;
+        display: block;
+        margin-top: 1.5em;
+        font-family: 'Montserrat Medium', Helvetica, sans-serif;
+        font-size: 1.2em;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .divUrunAna span:last-of-type {
+        position: relative;
+        display: block;
+        margin-top: 0.5em;
+        font-family: 'Montserrat Regular', Helvetica, sans-serif;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+
+
+.divDigerLink {
+    position: relative;
+    max-width: 65em;
+    margin: 4em auto 0 auto;
+    box-shadow: 0 0 0.8em 0.4em rgba(0, 0, 0, 0.2);
+    /*border:1px solid red;*/
+}
+
+    .divDigerLink img {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .divDigerLink p {
+        position: absolute;
+        display: block;
+        width: 36%;
+        top: 05%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        text-align: center;
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2.0em;
+        color: white;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.8), 0 0 1em #ab5e3d, 0 0 0.5em #ab5e3d;
+        /*border:1px solid red;*/
+    }
+
+.divDigerBtn {
+    position: absolute;
+    width: 7em;
+    height: 3.2em;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    /*border:1px solid red;*/
+}
+
+    .divDigerBtn img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+
+    .divDigerBtn:hover img {
+        filter: saturate(150%);
+    }
+
+    .divDigerBtn a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .divDigerBtn span {
+        position: relative;
+        top: 18%;
+        left: 20%;
+        font-family: 'Kalam Regular', Helvetica, sans-serif;
+        font-size: 2em;
+        color: white;
+    }

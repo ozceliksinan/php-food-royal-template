@@ -1,0 +1,872 @@
+/*@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TitilliumText22L-Regular';
+    src: url('../fonts/TitilliumText22L003.woff') format('woff');
+}*/
+
+body {
+    background-color: #cfcccf;
+    margin: 0;
+    padding: 0;
+    /*height:100%;*/
+
+    font-family: 'Roboto-Regular', Helvetica, sans-serif;
+    /*font-smooth: always;*/
+
+    font-size: 1.2vw;
+    box-sizing: border-box;
+}
+
+
+.secUst {
+    position: fixed;
+    /*height: ;*/
+    width: 100%;
+}
+
+.divLogo {
+    position: relative;
+    display: inline-block;
+    width: 8em;
+    height: 5em;
+    vertical-align: top;
+    background-color: #666670;
+}
+
+.divMenuWrapper {
+    position: relative;
+    display: inline-block;
+    width: 75em;
+    left: -0.2em;
+}
+
+.divPanelButtons {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    left: -1px;
+    background-color: #ed4133;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+.divPanelButton {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    height: 2em;
+    padding-top: 0.6em;
+    vertical-align: top;
+    color: #fcfafb;
+    font-size: 0.8em;
+    text-shadow: 1px 1px #676767;
+    /*text-align: center;*/
+
+    cursor: pointer;
+    border-left: 1px solid #ff6354;
+    /*border:1px solid red;*/
+}
+
+    .divPanelButton:hover {
+        background-image: linear-gradient( to bottom, #ed4133, #ff7066, #ed4133 );
+    }
+
+    .divPanelButton:first-of-type {
+        border-left: none;
+    }
+
+.spButtonIcon {
+    margin-left: 0.5em;
+}
+
+.spButton {
+    margin-left: 0.5em;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.divPanelBtnSelected {
+    color: white;
+    background-image: linear-gradient( to bottom, #ed4133, #ff7a74, #ed4133 );
+}
+
+.divSmall {
+    height: 2em;
+    padding-top: 0.6em;
+    font-size: 0.8em;
+}
+
+    .divSmall:hover {
+        background-image: linear-gradient( to bottom, #ed4133, #ff7066, #ed4133 );
+    }
+
+.divPages {
+    position: relative;
+    /*display: none;*/
+    /*display:flex;
+    flex-flow: row wrap;
+    justify-content: center;*/
+
+    left: -1px;
+    height: auto;
+    background-color: #48484f;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+
+.divPage {
+    position: relative;
+    display: inline-block;
+    /* flex:1;
+        height: 1.6em;
+        max-width: 10em;*/
+    /*top:0.9em;*/
+    margin-left: 0.5em;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    color: white;
+    font-size: 0.8em;
+    /*text-align: center;*/
+
+    cursor: pointer;
+    border-right: 2px solid #7a7a86;
+    transition: background-color 0.3s;
+    /*border:1px solid red;*/
+}
+
+    .divPage:first-of-type {
+        /*margin-left: 0.5em;*/
+    }
+
+    .divPage:last-of-type {
+        border-right: none;
+    }
+
+    .divPage:hover {
+        border-bottom: 2px solid #ed4133;
+    }
+
+.divPageSelected {
+    text-shadow: -1px -1px #878787;
+    background-color: #5a5a64;
+    border-bottom: 2px solid #ed4133;
+}
+
+.spPageNo {
+    /*margin-left: 0.4em;*/
+}
+
+.spPageName {
+    margin-left: 0.5em;
+}
+
+.divPageAdd {
+    max-width: 1em;
+    margin-right: 0.5em;
+    border-right: none;
+    background-color: #644643;
+}
+
+    .divPageAdd span {
+        position: relative;
+        left: -0.3em;
+    }
+
+.divTagList {
+    position: fixed;
+    /*display: none;*/
+
+    height: 81%;
+    width: 15%;
+    /*margin-top: -0.3em;*/
+
+    overflow-y: auto;
+    background-color: #c1bdc1;
+}
+
+.divTag {
+    position: relative;
+    height: 1.5em;
+    margin-top: 0.1em;
+    background: linear-gradient(to top, #43545b, #7e8b9e);
+    text-shadow: 1px 1px #4c3f3f;
+    cursor: pointer;
+    /*border:1px solid red;*/
+}
+
+    .divTag:hover {
+        background: linear-gradient(to bottom, #43545b, #7e8b9e);
+        text-shadow: 1px -1px #302828;
+    }
+
+    .divTag:active {
+        margin-top: 0.2em;
+    }
+
+.divTagSelected {
+    text-shadow: 1px 1px #b1b1b1;
+    background: linear-gradient(to top, #7896a3, #a7b7d1);
+}
+
+    .divTagSelected span:first-of-type {
+        color: #fa2300;
+        font-weight: bold;
+        text-shadow: 1px 1px #ac6560;
+    }
+
+.spTagName {
+    position: relative;
+    top: 0.1em;
+    left: 1em;
+    text-align: center;
+    font-size: .8em;
+    color: #fe553d;
+}
+
+.spTagType {
+    position: absolute;
+    top: 2em;
+    right: 0.5em;
+    font-size: 0.7em;
+    color: #60d5b9;
+}
+
+
+.divContent {
+    position: fixed;
+    /*display: none;*/
+
+    height: 85%;
+    /*height: 53rem;*/
+    width: 69.5%;
+    margin-bottom: 1em;
+    margin-left: 15.5%;
+    padding-bottom: 1em;
+    overflow: auto;
+    /*margin-top: -0.3em;*/
+
+    background-color: #c1bdc1;
+}
+
+.divContentWide {
+    width: 84.5%;
+    margin-left: 0.5em;
+}
+
+
+.divTagRow {
+    display: inline-block;
+    /*max-height: 15em;*/
+
+    width: 99%;
+    border: solid 1px gray;
+    overflow-x: auto;
+}
+
+.divTagRowBig {
+    /*display:flex;*/
+    /*flex-flow: row nowrap;*/
+    min-height: 10em;
+    /*border:solid 1px gray;*/
+    /*border:solid 1px #ea0000;*/
+    overflow-y: auto;
+}
+
+.divTagValue {
+    position: relative;
+    width: 95%;
+    margin: 0.8em auto;
+    background-color: #bdb9bd;
+    border: solid 1px #9c9cae;
+    box-shadow: 0 2px 4px #9999a9;
+}
+
+.divTagValueInline {
+    position: relative;
+    /*display: inline-block;*/
+
+    width: 99%;
+    margin: 0.8em auto;
+    background-color: #bdb9bd;
+    vertical-align: top;
+    border: solid 1px #9c9cae;
+    box-shadow: 0 2px 4px #9999a9;
+}
+
+.divTagValueInlineBig {
+    position: relative;
+    /*display: inline-block;*/
+    /*flex: 1;*/
+
+    min-height: 10em;
+    width: 99%;
+    margin-left: 0.5em;
+    background-color: #bdb9bd;
+    border: solid 1px gray;
+    box-shadow: 0 2px 4px #9999a9;
+}
+
+.divTagLangWrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    overflow: hidden;
+    /*border:solid 1px red;*/
+}
+
+.divTagLang {
+    position: relative;
+    width: 90%;
+    padding: 0.1em 0 0.1em 0.5em;
+    color: white;
+    text-shadow: 1px 1px #686873;
+    background-color: #60d5b9;
+    font-size: 0.8em;
+}
+
+    .divTagLang:after {
+        content: '';
+        position: absolute;
+        width: 3em;
+        height: 4em;
+        top: -1.5em;
+        left: 100%;
+        transform: rotate(30deg);
+        background-color: #bdb9bd;
+        /*border-right:solid 1px #5bc9af;*/
+    }
+
+
+.divTagBtns {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    overflow: hidden;
+    /*border:solid 1px red;*/
+}
+
+.divTextValue {
+    position: relative;
+    min-height: 1.3em;
+    width: 97%;
+    margin: 0.5em auto 0.5em 0.3em;
+    padding: 0.3em;
+    font-family: consolas, monospace;
+    font-weight: bold;
+    color: #35353b;
+    text-shadow: 1px 1px #cacae0;
+    border: solid 1px #828c94;
+    box-shadow: 0 2px 4px #9999a9;
+}
+
+    .divTextValue span { /*bu satır contenteditable alanlarda chrome'un iki farklı font türü içiçe geçince kendiliğinden yaptığı eklemeyi engellemek için*/
+        font-size: 1.2vw;
+    }
+
+.divTextValueBig {
+    position: relative;
+    width: 97%;
+    min-height: 9em;
+    margin: 0.5em auto 0.5em 0.3em;
+    padding: 0.3em;
+    font-family: consolas, monospace;
+    font-weight: bold;
+    color: #35353b;
+    text-shadow: 1px 1px #cacae0;
+    border: solid 1px #9c9cae;
+    box-shadow: 0 2px 4px #9999a9;
+}
+
+.divTextValue span {
+    font-size: 1.2vw;
+}
+
+.divSideBar {
+    position: fixed;
+    height: 100%;
+    width: 14%;
+    margin-left: 85.5%;
+    background-color: #c1bdc1;
+}
+
+.divParameterContainer {
+    position: relative;
+    height: 40%;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    background-color: #c9c9c9;
+    border: solid 1px #7b7b89;
+    box-shadow: 0 2px 4px #9999a9;
+    overflow-y: auto;
+    /*overflow-x: hidden;*/
+}
+
+.divParameter {
+    position: relative;
+    width: 95%;
+    margin: 0.5em auto 1.5em auto;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #7e7e8c;
+}
+
+    .divParameter select {
+        position: relative;
+        display: block;
+        width: 98%;
+        padding: 0.1em 0;
+        margin: 0.5em auto 0.5em auto;
+        color: #373b3d;
+        background-color: #f3eef5;
+        border-radius: 5px;
+    }
+
+    .divParameter input[type=text] {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin: 0 auto 0.5em auto;
+        padding: 0.2em 0.3em;
+        color: #373b3d;
+        background-color: #f3eef5;
+        border-radius: 5px;
+    }
+
+    .divParameter input[type=button] {
+        position: relative;
+        top: 0.5em;
+        left: 6.8em;
+        /*margin:0 auto 0.5em auto;*/
+
+        border-radius: 5px;
+    }
+
+#btnAddParameter {
+    position: relative;
+    left: 0.5em;
+    border-radius: 5px;
+}
+
+#btnSaveParameter {
+    position: relative;
+    left: 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s linear;
+}
+
+#btnApplyAllParameter {
+    position: relative;
+    left: 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s linear;
+}
+
+
+.divPasteWithStyleContainer {
+    position: relative;
+    height: 4%;
+    width: 95%;
+    margin: 0 auto;
+    /*padding-bottom:1em;*/
+
+    background-color: #c9c9c9;
+    text-align: center;
+    border: solid 1px #7b7b89;
+    box-shadow: 0 2px 4px #9999a9;
+    overflow-y: auto;
+    /*overflow-x: hidden;*/
+}
+
+    .divPasteWithStyleContainer input[type=button] {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        top: 0.3em;
+        /*margin:0 auto 0.5em auto;*/
+
+        border-radius: 5px;
+    }
+
+    .divPasteWithStyleContainer span {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        top: 0.3em;
+        color: #373b3d;
+        font-size: 0.8em;
+    }
+
+
+.divDeleteBtn {
+    position: fixed;
+    bottom: 7em;
+    right: 2.5em;
+    width: 8em;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px #51504e;
+    background-color: #0ed16f;
+    /*border:solid 1px red;*/
+
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* non-prefixed version, currently
+                              not supported by any browser */
+
+    transition: background-color 0.3s linear;
+}
+
+    .divDeleteBtn:active {
+        bottom: 6.93em;
+    }
+
+.divSaveBtn {
+    position: fixed;
+    bottom: 4em;
+    right: 2.5em;
+    width: 8em;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px #51504e;
+    background-color: #0ed16f;
+    /*border:solid 1px red;*/
+
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* non-prefixed version, currently
+                                  not supported by any browser */
+
+    transition: background-color 0.3s linear;
+}
+
+    .divSaveBtn:active {
+        bottom: 3.93em;
+    }
+
+.divApplyAll {
+    position: fixed;
+    bottom: 1em;
+    right: 2.5em;
+    width: 8em;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px #51504e;
+    background-color: #0ed16f;
+    /*border:solid 1px red;*/
+
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* non-prefixed version, currently
+                                  not supported by any browser */
+
+    transition: background-color 0.3s linear;
+}
+
+    .divApplyAll:active {
+        bottom: 0.93em;
+    }
+
+.responseOK {
+    background-color: #00ff68;
+}
+
+.divFolderContainer {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding: 0.5em;
+    overflow-x: scroll;
+    /*border:dashed 2px #ff6100;*/
+}
+
+.divFolderContents {
+    position: relative;
+    display: inline-block;
+    flex: auto;
+    margin-right: 0.5em;
+    max-width: 15em;
+    min-width: 10em;
+    text-align: center;
+    background-color: #c3bfc3;
+    box-shadow: 0 2px 4px #54545d;
+    /*border:dotted 2px red;*/
+}
+
+    .divFolderContents h1 {
+        position: relative;
+        width: 90%;
+        margin-left: 0.7em;
+        color: #5a6b77;
+        text-shadow: 1px 1px #aaaaaa;
+        /*background-color: #86a8ae;*/
+
+        font-size: .9em;
+        font-weight: bold;
+        font-family: Helvetica, sans-serif;
+        border-bottom: solid 2px #677c89;
+    }
+
+.divFolder, .divFolderSelected {
+    position: relative;
+    height: 1.8em;
+    width: 90%;
+    margin: 0.5em auto;
+    padding-top: 0.3em;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #54545d;
+    cursor: pointer;
+    /*border:1px solid #a000ff;*/
+}
+
+    .divFolder, .divFolderSelected span {
+        font-weight: bold;
+        color: white;
+        font-size: 0.8em;
+    }
+
+.divFolder {
+    background-color: #a7a7b6;
+}
+
+.divFolderSelected {
+    height: 1.6em;
+    padding-top: 0;
+    border: 1px solid #78b692;
+    background-color: #5ac289;
+    box-shadow: 0 2px 2px #94e3b7;
+}
+
+
+
+
+
+.divFile, .divFileSelected {
+    position: relative;
+    height: 2em;
+    width: 90%;
+    margin: 0.5em auto;
+    padding-top: 0.3em;
+    text-align: center;
+    font-size: 0.7em;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #b1b1b1;
+    cursor: pointer;
+}
+
+
+
+.divFile {
+    background-color: #b7b7c7;
+    color: #5d5d5d;
+}
+
+
+.divFileSelected {
+    color: #797979;
+    font-weight: bold;
+    background-color: #a0f2c3;
+    border: 1px solid #8ed6ac;
+    box-shadow: 0 2px 2px #6ca585;
+}
+
+
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 1001;
+}
+
+.divPopHeader {
+    position: absolute;
+    height: 2rem;
+    width: 8rem;
+    top: -2rem;
+    margin: 0 auto;
+    left: -0.1rem;
+    background: transparent;
+    overflow: hidden;
+}
+
+.divPopRotate {
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    top: -2rem;
+    left: -0.2rem;
+    background-color: rgba(255, 105, 49, 0.80);
+    transform: rotateZ(-30deg);
+}
+
+.spPopHeader {
+    position: absolute;
+    top: 2.1rem;
+    left: 1.1rem;
+    font-family: Consolas, 'Times New Roman';
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transform: rotateZ(30deg);
+}
+
+.spPopClose {
+    position: absolute;
+    top: -0.7em;
+    left: 96%;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(255, 105, 49, 0.80);
+    cursor: pointer;
+    z-index: 6;
+}
+
+.divPopContent {
+    position: relative;
+    width: 25rem;
+    height: 15rem;
+    top: 50%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    background-color: rgba(105, 30, 0, 0.90);
+    border: 2px solid rgba(255, 105, 49, 0.80);
+}
+
+    .divPopContent p {
+        position: relative;
+        top: 3rem;
+        font-family: Consolas, 'Times New Roman';
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    }
+
+
+.divPopBtn, .divPopBtnCancel {
+    position: relative;
+    width: 10rem;
+    height: 2rem;
+    /*border:1px solid blue;*/
+
+    overflow: hidden;
+}
+
+.divPopBtn {
+    top: 8.2rem;
+    margin: 0 auto;
+    left: 0.5rem;
+}
+
+.divPopBtnCancel {
+    top: 6.2rem;
+    margin: 0 auto;
+    left: 8.2rem;
+}
+
+
+.divPopBtnRotate, .divPopBtnRotateCancel {
+    position: absolute;
+    width: 6rem;
+    height: 10rem;
+    top: -3.5rem;
+    right: 2.2rem;
+    transform: rotateZ(30deg);
+}
+
+.divPopBtnRotate {
+    background-color: rgba(255, 76, 10, 0.80);
+}
+
+.divPopBtnRotateCancel {
+    background-color: rgba(255, 105, 49, 0.80)
+}
+
+.popBtn {
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    color: #ffffff;
+    /*text-shadow: 1px 1px 3px #60d5b9;*/
+
+
+    left: 0.6rem;
+    bottom: 4.3rem;
+    font-family: Consolas, 'Times New Roman';
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 6;
+    cursor: pointer;
+    transform: rotateZ(-30deg);
+}
+
+
+
+
+
+.divFileRow {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+}
+
+    .divFileRow span {
+        font-family: Consolas, 'Times New Roman',sans-serif;
+        font-weight: normal;
+        font-size: 0.7em;
+    }
+
+    .divFileRow div {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.5em;
+        padding: 0.2em 0.5em;
+        font-size: 0.7em;
+        background-color: aliceblue;
+        cursor: pointer;
+        border: 1px solid gray;
+    }
+
+    .divFileRow img {
+        position: relative;
+        max-width: 5em;
+        max-height: 3em;
+        margin-left: 0.5em;
+    }
